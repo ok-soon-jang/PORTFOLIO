@@ -43,11 +43,6 @@ img {
   display: block;
   clear: both;
 }
-.intro .inner .intro__left {
-  position: absolute;
-  top: 33%;
-  left: 50px;
-}
 .intro .inner .intro__left .txt-group p {
   font: 22px/1 "Nanum Gothic";
   margin-bottom: 20px;
@@ -56,19 +51,8 @@ img {
   font: 72px/1 "Nanum Myeongjo", serif;
   font-weight: 700;
 }
-.intro .inner .intro__right {
-  position: absolute;
-  top: 25%;
-  right: 50px;
-}
-.intro .inner .intro__right .pic {
-  width: 250px;
-  height: 250px;
-}
 .intro .inner .intro__right .pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 250px;
 }
 .intro .footer_info {
   position: absolute;
@@ -112,47 +96,40 @@ img {
 }
 .introduce .inner .introduce__contents {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
-.introduce .inner .introduce__contents .introduce__left {
-  margin-right: 147px;
+.introduce .inner .introduce__contents::after {
+  content: "";
+  display: block;
+  clear: both;
 }
-.introduce .inner .introduce__contents .introduce__left .pic {
-  width: 429px;
-  height: 426px;
+.introduce .inner .introduce__contents .pic {
+  float: left;
+  width: 50%;
 }
-.introduce .inner .introduce__contents .introduce__left .pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.introduce .inner .introduce__contents .pic img {
+  width: 70%;
 }
-.introduce .inner .introduce__contents .introduce__right .txt-group .pic {
-  width: 430px;
-  height: 80px;
+.introduce .inner .introduce__contents .txt-group {
+  float: right;
+  width: 50%;
+}
+.introduce .inner .introduce__contents .txt-group .tit {
   margin-bottom: 40px;
 }
-.introduce .inner .introduce__contents .introduce__right .txt-group .pic .tit {
-  width: 100%;
-  height: 100%;
-}
-.introduce .inner .introduce__contents .introduce__right .txt-group h2 {
+.introduce .inner .introduce__contents .txt-group h2 {
   font: 26px/1 "Nanum Myeongjo", serif;
   font-weight: 700;
   margin-bottom: 30px;
 }
-.introduce .inner .introduce__contents .introduce__right .txt-group p {
+.introduce .inner .introduce__contents .txt-group p {
   font-size: 16px;
   line-height: 1.6;
 }
-.introduce .inner .introduce__contents .introduce__right .txt-group .pic_skill {
-  width: 744px;
-  height: 248px;
-}
-.introduce .inner .introduce__contents .introduce__right .txt-group .pic_skill .skill {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.introduce .inner .introduce__contents .txt-group .skill {
+  width: 614px;
+  height: 205px;
 }
 
 .web_portfolio {
@@ -175,14 +152,7 @@ img {
   margin: 0 auto;
   padding: 120px 0px;
 }
-.web_portfolio .inner .txt-group .pic {
-  width: 328px;
-  height: 67px;
-}
-.web_portfolio .inner .txt-group .pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.web_portfolio .inner .txt-group img {
   margin-bottom: 30px;
 }
 .web_portfolio .inner .txt-group p {
@@ -326,15 +296,8 @@ img {
   margin: 0 auto;
   padding: 120px 0px;
 }
-.detail_portfolio .inner .txt-group .pic {
-  width: 508px;
-  height: 67px;
+.detail_portfolio .inner .txt-group img {
   margin-bottom: 30px;
-}
-.detail_portfolio .inner .txt-group .pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .detail_portfolio .inner .txt-group p {
   font: 16px/1 "Nanum Gothic";
@@ -479,75 +442,26 @@ img {
   width: 100%;
 }
 
-@media screen and (max-width: 1199px) {
-  .intro .inner {
-    width: 100%;
-  }
+@media screen and (max-width: 1354px) {
   .intro .inner .intro__left {
+    float: none;
+    height: auto;
+    position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -231px;
+    transform: translate(-50%, -50%);
     text-align: center;
+    padding-left: 0px;
+    padding-top: 0px;
   }
   .intro .inner .intro__right {
-    left: 50%;
-    top: 12%;
-    right: 0px;
-    margin-left: -125px;
-  }
-  .introduce .inner {
+    padding: 0px;
+    float: none;
+    padding-top: 107px;
     width: 100%;
-  }
-  .introduce .inner .introduce__contents {
-    display: unset;
-  }
-  .introduce .inner .introduce__contents .introduce__left {
-    margin-right: 0px;
-    display: flex;
+    background: yellow;
     justify-content: center;
-    margin-bottom: 50px;
-  }
-  .introduce .inner .introduce__contents .introduce__right .txt-group {
-    padding: 0 20px;
-  }
-  .introduce .inner .introduce__contents .introduce__right .txt-group .pic {
-    width: 80%;
-    height: auto;
-  }
-  .introduce .inner .introduce__contents .introduce__right .txt-group .pic_skill {
-    width: 100%;
-  }
-  .detail_portfolio #modalBody {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 899px) {
-  .web_portfolio .inner div.web_portfolio__contents article {
-    width: 50%;
-  }
-  .detail_portfolio .inner div.detail_portfolio__contents article {
-    width: 33.3333%;
-  }
-  .introduce {
-    padding: 100px 0;
-  }
-}
-@media screen and (max-width: 599px) {
-  .detail_portfolio .inner div.detail_portfolio__contents article {
-    width: 50%;
-  }
-  .detail_portfolio .inner .txt-group .pic {
-    width: 80%;
-    height: auto;
-  }
-  .web_portfolio .inner .txt-group .pic {
-    width: 80%;
-    height: auto;
-  }
-  .introduce .inner .introduce__contents .introduce__left .pic {
-    width: 80%;
-    height: auto;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=sytle.css.map */
