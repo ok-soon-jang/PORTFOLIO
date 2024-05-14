@@ -24,30 +24,6 @@ img {
   display: block;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Nanum Gothic", sans-serif;
-}
-
-ul, ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  outline: 0;
-  color: #271b0f;
-}
-
-img {
-  display: block;
-}
-
 .detail_body {
   background-color: #271b0f;
 }
@@ -60,6 +36,11 @@ img {
   width: 100%;
 }
 
+@media screen and (max-width: 899px) {
+  .detail_img {
+    width: 100%;
+  }
+}
 .inner {
   width: 1320px;
   margin: 0 auto;
