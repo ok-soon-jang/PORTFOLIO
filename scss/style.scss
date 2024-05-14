@@ -13,6 +13,24 @@
   position: relative;
 }
 
+/*SCROLL TO TOP*/
+#to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9;
+  width: 42px;
+  height: 42px;
+  background-color: #271b0f;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // INTRO
 .intro {
   width: 100%;
@@ -673,23 +691,7 @@ footer {
   transition-delay: .9s;
 }
 
-/*SCROLL TO TOP*/
-#to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 9;
-  width: 42px;
-  height: 42px;
-  background-color: #271b0f;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 
 
@@ -903,7 +905,13 @@ footer {
     font-size: 12px;
   }
   .web_portfolio .inner div.web_portfolio__contents article .inner a .info .details .sub .role {
-    font-size: 0.9em;
+    font-size: 12px;
+  }
+  .web_portfolio .inner div.web_portfolio__contents article .inner a .info .details .sub .date {
+    font-size: 12px;
+  }
+  .detail_portfolio .inner div.detail_portfolio__contents article .inner:hover a .info .details .sub .role {
+    font-size: 12px;
   }
 }
 
