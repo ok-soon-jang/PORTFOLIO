@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import "reset";
+
+.detail_body {
+  background-color: #271b0f;
+}
+.detail_img {
+  width: 860px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}

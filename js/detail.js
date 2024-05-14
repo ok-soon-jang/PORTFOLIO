@@ -1,0 +1,7 @@
+
+
+function closeTabClick() {
+  window.close();
+}
+
+

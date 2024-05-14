@@ -6,23 +6,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--<script defer src="./js/isotope.pkgd.min.js"></script>-->
+  <!--ScrollMagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <script defer src="./js/main.js"></script>
   <title>장옥순 포트폴리오</title>
 </head>
 <body>
 
-  <section class="intro">
+  <section class="intro scroll-spy">
     <div class="inner">
 
-      <div class="intro__left">
+      <div class="intro__left back-to-position to-top delay-0">
         <div class="txt-group">
           <p>주어진 일에 최선을 다하는 디자이너 장옥순입니다.</p>
           <h1>포트폴리오</h1>
         </div>
       </div>
 
-      <div class="intro__right">
+      <div class="intro__right back-to-position to-top delay-1">
         <div class="pic">
           <img src="./img/ident_picture.png" alt="증명사진">
         </div>
@@ -30,29 +36,29 @@
       
     </div>
     <div class="footer_info">
-      <div class="phone_info">
+      <div class="phone_info pic back-to-position to-right delay-1">
         <i class="fa-solid fa-mobile-screen"></i>
         <p>+ 82 010-8796-7430</p>
       </div>
-      <div class="email_info">
+      <div class="email_info back-to-position to-left delay-1">
         <i class="fa-solid fa-envelope"></i>
         <p>pvow77@naver.com</p>
       </div>
     </div>
   </section>
   
-  <section class="introduce">
+  <section class="introduce scroll-spy">
 
     <div class="inner">
 
       <div class="introduce__contents">
-        <div class="introduce__left">
+        <div class="introduce__left back-to-position to-bottom delay-0">
           <div class="pic">
             <img src="./img/introduce.jpg" alt="introduce" />
           </div>
         </div>
 
-        <div class="introduce__right">
+        <div class="introduce__right back-to-position to-top delay-2">
           <div class="txt-group">
             <div class="pic">
               <img src="./img/about_me_tit.png" alt="about me" class="tit" />
@@ -71,9 +77,10 @@
             <p>2017.07~2020.01 웰컴펫 웹 그래픽 디자인 / 카페24 UI/UX 디자인</p>
             <p>2020.03~2020.09 스마트 UI/UX 웹디자인, 웹퍼블리셔 수료</p>
             <p>2020.08~2022.05 UI/UX 반응형 웹, 카페24 / 아임웹을 통한 반응형 웹디자인 </p>  
+            <p>2022.11~2023.11 UI/UX 반응형 웹, 카페24 / 웹 그래픽 디자인(촬영, 상세, 배너) </p>  
             <h3>스킬</h3>
             <div class="pic_skill">
-              <img src="./img/skill.png" alt="skill" class="skill">
+              <img src="./img/skill.jpg" alt="skill" class="skill">
             </div>
           </div>
         </div>
@@ -82,10 +89,10 @@
 
   </section>
 
-  <section class="web_portfolio">
+  <section class="web_portfolio scroll-spy">
 
     <div class="inner">
-      <div class="txt-group">
+      <div class="txt-group back-to-position to-top delay-0">
         <div class="pic">
           <img src="./img/web_design_tit.png" alt="creative portfolio" />
         </div>
@@ -94,17 +101,17 @@
 
       </div>
     
-        <ul>
+        <ul class="back-to-position to-top delay-1">
           <li><a href=".even">#웹컨텐츠</a></li>
           <li><a href=".odd">#웹사이트</a></li>
           <li class="on"><a href="*">#All</a></li>
         </ul>
       
-        <div class="web_portfolio__contents">
+        <div class="web_portfolio__contents back-to-position to-top delay-1">
           <article class="odd">
               <div class="inner">
-                <a href="https://fullscreenui.netlify.app/">
-                  <img src="img/portfolio1.png" alt="portfolio1" target="_blank">
+                <a href="https://fullscreenui.netlify.app/" target="_blank">
+                  <img src="img/portfolio1.png" alt="portfolio1">
 
                   <div class="info">
                     <div class="bg"></div>
@@ -121,7 +128,7 @@
               </div>
           </article>
 
-          <article class="even">
+          <article class="odd">
             <div class="inner">
               <a href="https://roaring-vacherin-3f372e.netlify.app/" target="_blank">
                 <img src="img/portfolio2.png" alt="portfolio2">
@@ -166,14 +173,14 @@
                       <b class="name">Web - contents</b>
                       <div class="sub">
                         <span class="role">타운 애니메이션</span>
-                        <span class="date">2020.12</span>
+                        <span class="date">2023.7</span>
                       </div>
                   </div>
                 </div>
               </a>
             </div>
           </article>
-          <article class="odd">
+          <article class="even">
             <div class="inner">
               <a href="https://panoramaui.netlify.app/"  target="_blank">
                 <img src="img/portfolio5.png" alt="portfolio5">
@@ -183,14 +190,14 @@
                       <b class="name">Web - contents</b>
                       <div class="sub">
                         <span class="role">파노라마 UI</span>
-                        <span class="date">2020.12</span>
+                        <span class="date">2024.1</span>
                       </div>
                   </div>
                 </div>
               </a>
             </div>
           </article>
-          <article class="even">
+          <article class="odd">
             <div class="inner">
               <a href="https://www.nutribank.co.kr/"  target="_blank">
                 <img src="img/portfolio6.png" alt="portfolio6">
@@ -200,7 +207,7 @@
                       <b class="name">Web - site</b>
                       <div class="sub">
                         <span class="role">반응형 뉴트리뱅크 사이트</span>
-                        <span class="date">2020.12</span>
+                        <span class="date">2020.7</span>
                       </div>
                   </div>
                 </div>
@@ -217,14 +224,14 @@
                       <b class="name">Web - site</b>
                       <div class="sub">
                         <span class="role">반응형 팀타운 공유오피스 사이트</span>
-                        <span class="date">2020.12</span>
+                        <span class="date">2023.3</span>
                       </div>
                   </div>
                 </div>
               </a>
             </div>
           </article>
-          <article class="even">
+          <article class="odd">
             <div class="inner">
               <a href="https://www.jijulaw.co.kr/" target="_blank">
                 <img src="img/portfolio8.png" alt="portfolio8">
@@ -234,7 +241,7 @@
                       <b class="name">Web - site</b>
                       <div class="sub">
                         <span class="role">반응형 법률사무소 지주 사이트</span>
-                        <span class="date">2020.12</span>
+                        <span class="date">2022.4</span>
                       </div>
                   </div>
                 </div>
@@ -251,7 +258,41 @@
                       <b class="name">Web - site</b>
                       <div class="sub">
                         <span class="role">반응형 갤러리 UI</span>
-                        <span class="date">2020.12</span>
+                        <span class="date">2024.3</span>
+                      </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </article>
+          <article class="odd">
+            <div class="inner">
+              <a href="https://aimlaw.co.kr/"  target="_blank">
+                <img src="img/portfolio10.png" alt="portfolio10">
+                <div class="info">
+                  <div class="bg"></div>
+                  <div class="details">
+                      <b class="name">Web - site</b>
+                      <div class="sub">
+                        <span class="role">반응형 법률사무소 에임 사이트</span>
+                        <span class="date">2023.6</span>
+                      </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </article>
+          <article class="odd">
+            <div class="inner">
+              <a href="https://www.oliveobgy.co.kr/"  target="_blank">
+                <img src="img/portfolio11.png" alt="portfolio11">
+                <div class="info">
+                  <div class="bg"></div>
+                  <div class="details">
+                      <b class="name">Web - site</b>
+                      <div class="sub">
+                        <span class="role">반응형 올리브 산부인과</span>
+                        <span class="date">2022.11</span>
                       </div>
                   </div>
                 </div>
@@ -263,10 +304,10 @@
   
   </section>
 
-  <section class="detail_portfolio">
+  <section class="detail_portfolio scroll-spy">
 
     <div class="inner">
-      <div class="txt-group">
+      <div class="txt-group back-to-position to-top delay-0">
         <div class="pic">
           <img src="./img/detail_page_design_tit.png" alt="creative portfolio" />
         </div>
@@ -275,506 +316,964 @@
           저는 기획 + 디자인 + 퍼블리싱 모두 가능한 5년 이상 경력을 가진 웹디자이너입니다. </p>
       </div>
     
-        <ul>
-          <li><a href=".even">#이벤트 배너</a></li>
-          <li><a href=".odd">#상세페이지</a></li>
+        <ul class="back-to-position to-top delay-1">
+          <li><a href=".odd">#이벤트 배너</a></li>
+          <li><a href=".even">#상세페이지</a></li>
           <li class="on"><a href="*">#All</a></li>
         </ul>
       
-        <div class="detail_portfolio__contents">
-          <article class="odd detail_wrap">
+        <div class="detail_portfolio__contents back-to-position to-top delay-1">
+          <article class="even">
 
               <div class="inner">
-                <a href="#">
+                <a href="./detail_1.html" target="_blank">
                   <img src="img/p1.jpg" alt="1" />
                   <div class="info">
                     <div class="bg"></div>
                     <div class="details">
-                        <b class="name">Web - site</b>
+                        <b class="name">도그퓨어 강아지 샴푸 상세페이지</b>
                         <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
+                          <span class="role">#기획  #디자인</span>
                         </div>
                     </div>
                   </div>
                 </a>
               </div>
 
-              <div id="modalWrap">
+              <!-- <div id="modalWrap">
                 <div id="modalBody">
                   <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
                 </div>
-              </div>
+              </div> -->
               
           </article>
 
           <article class="even">
 
             <div class="inner">
-              <a href="#">
-                <img src="img/p1.jpg" alt="1" />
+              <a href="./detail_2.html" target="_blank">
+                <img src="img/p2.jpg" alt="2" />
                 <div class="info">
                   <div class="bg"></div>
                   <div class="details">
-                      <b class="name">Web - site</b>
+                      <b class="name">램프 상세페이지</b>
                       <div class="sub">
-                        <span class="role">반응형 갤러리 UI</span>
-                        <span class="date">2020.12</span>
+                        <span class="role">#기획  #디자인</span>
                       </div>
                   </div>
                 </div>
               </a>
             </div>
 
-            <div id="modalWrap">
+            <!-- <div id="modalWrap">
               <div id="modalBody">
                 <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
               </div>
+            </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_3.html" target="_blank">
+                  <img src="img/p3.jpg" alt="3" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">건강기능식품 상세페이지</b>
+                        <div class="sub">
+                          <span class="role">#기획  #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_4.html" target="_blank">
+                  <img src="img/p4.jpg" alt="접이식 테이블 상세페이지" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">접이식 테이블 상세페이지</b>
+                        <div class="sub">
+                          <span class="role">#기획  #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_5.html" target="_blank">
+                  <img src="img/p5.jpg" alt="캠핑용 도마 상세페이지" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">캠핑용 도마 상세페이지</b>
+                        <div class="sub">
+                          <span class="role">#기획  #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+<!-- 
+              <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_6.html" target="_blank">
+                  <img src="img/p6.jpg" alt="립스틱 상세페이지" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">립스틱  상세페이지</b>
+                        <div class="sub">
+                          <span class="role">#기획  #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+            <div class="inner">
+              <a href="./detail_7.html" target="_blank">
+                <img src="./img/p7.jpg" alt="화장품 에센스 상세페이지" />
+                <div class="info">
+                  <div class="bg"></div>
+                  <div class="details">
+                      <b class="name">화장품 에센스 상세페이지</b>
+                      <div class="sub">
+                        <span class="role">#기획  #디자인</span>
+                      </div>
+                  </div>
+                </div>
+              </a>
             </div>
-          </article>
 
-          <article class="odd">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
+            <!-- <div id="modalWrap">
+              <div id="modalBody">
+                <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
               </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
+            </div> -->
           </article>
 
           <article class="even">
               <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
+                <a href="./detail_8.html" target="_blank">
+                  <img src="img/p8.jpg" alt="케잌 만들기 키드 상세페이지" />
                   <div class="info">
                     <div class="bg"></div>
                     <div class="details">
-                        <b class="name">Web - site</b>
+                        <b class="name">케잌 만들기 키드 상세페이지</b>
                         <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
+                          <span class="role">#기획   #디자인</span>
                         </div>
                     </div>
                   </div>
                 </a>
               </div>
 
-              <div id="modalWrap">
+              <!-- <div id="modalWrap">
                 <div id="modalBody">
                   <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
                 </div>
-              </div>
-          </article>
-
-          <article class="odd">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
+              </div> -->
           </article>
 
           <article class="even">
               <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
+                <a href="./detail_9.html" target="_blank">
+                  <img src="img/p9.jpg" alt="장단콩 웰빙 간식만들기 체험학습 상세페이지" />
                   <div class="info">
                     <div class="bg"></div>
                     <div class="details">
-                        <b class="name">Web - site</b>
+                        <b class="name">장단콩 웰빙 간식만들기 체험학습 상세페이지</b>
                         <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
+                          <span class="role">#기획   #디자인</span>
                         </div>
                     </div>
                   </div>
                 </a>
               </div>
 
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_10.html" target="_blank">
+                  <img src="img/p10.jpg" alt="office 365 상세페이지" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">office 365 상세페이지</b>
+                        <div class="sub">
+                          <span class="role">#기획   #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_11.html" target="_blank">
+                  <img src="img/p11.jpg" alt="키즈 모자 목도리 세트" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">키즈 모자 목도리 세트</b>
+                        <div class="sub">
+                          <span class="role">#기획   #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_12.html" target="_blank">
+                  <img src="img/p12.jpg" alt="소고기 정육 세트 상세페이지" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">소고기 정육 세트 상세페이지</b>
+                        <div class="sub">
+                          <span class="role">#기획   #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_13.html" target="_blank">
+                  <img src="img/p13.jpg" alt="땅파서팜 져키 상세페이지" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">땅파서팜 져키 상세페이지</b>
+                        <div class="sub">
+                          <span class="role">#기획   #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+<!-- 
               <div id="modalWrap">
                 <div id="modalBody">
                   <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
                 </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_14.html" target="_blank">
+                  <img src="img/p14.gif" alt="미용학원 상세페이지" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">미용학원 상세페이지</b>
+                        <div class="sub">
+                          <span class="role">#기획   #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
               </div>
+
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_15.html" target="_blank">
+                  <img src="img/p15.gif" alt="트롤리 상세페이지" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">트롤리 상세페이지</b>
+                        <div class="sub">
+                          <span class="role">#기획  #촬영  #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_16.html" target="_blank">
+                  <img src="img/p16.jpg" alt="5단 다용도 문걸이 선반 상세페이지" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">5단 다용도 문걸이 선반 상세페이지</b>
+                        <div class="sub">
+                          <span class="role">#기획  #촬영  #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_17.html" target="_blank">
+                  <img src="img/p17.gif" alt="미니 사이드 테이블 상세페이지" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">미니 사이드 테이블 상세페이지"</b>
+                        <div class="sub">
+                          <span class="role">#기획  #촬영  #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_18.html" target="_blank">
+                  <img src="img/p18.jpg" alt="강아지 간식 상세페이지" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">강아지 간식 상세페이지</b>
+                        <div class="sub">
+                          <span class="role">#기획  #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_19.html" target="_blank">
+                  <img src="img/p19.jpg" alt="애플워치밴드 상세페이지" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">애플워치밴드 상세페이지</b>
+                        <div class="sub">
+                          <span class="role">#기획  #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
+          </article>
+
+          <article class="even">
+              <div class="inner">
+                <a href="./detail_21.html" target="_blank">
+                  <img src="img/p21.jpg" alt="종이냄비 상세페이지" />
+                  <div class="info">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <b class="name">종이냄비 상세페이지</b>
+                        <div class="sub">
+                          <span class="role">#기획  #디자인</span>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div id="modalWrap">
+                <div id="modalBody">
+                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+                </div>
+              </div> -->
           </article>
 
           <article class="odd">
             <div class="inner">
-              <a href="#">
-                <img src="img/p1.jpg" alt="1" />
+              <a href="./detail_23.html" target="_blank">
+                <img src="img/p23.jpg" alt="누애인 설맞이 빅 이벤트 배너" />
                 <div class="info">
                   <div class="bg"></div>
                   <div class="details">
-                      <b class="name">Web - site</b>
+                      <b class="name">누애인 설맞이 빅 이벤트 배너</b>
                       <div class="sub">
-                        <span class="role">반응형 갤러리 UI</span>
-                        <span class="date">2020.12</span>
+                        <span class="role">#기획  #디자인</span>
                       </div>
                   </div>
                 </div>
               </a>
+              </div>
+              <!-- <div class="modalWrap">
+                <div class="modalBody">
+                  <p><img src="./img/p23.jpg" alt="루아나 미용실 이벤트 배너1"></p>
+                </div>
+              </div>  -->
+        </article>
+
+        <article class="even">
+          <div class="inner">
+            <a href="./detail_24.html" target="_blank">
+              <img src="img/p24.jpg" alt="에스프레소잔 상세페이지" />
+              <div class="info">
+                <div class="bg"></div>
+                <div class="details">
+                    <b class="name">에스프레소잔 상세페이지</b>
+                    <div class="sub">
+                      <span class="role">#기획 #디자인</span>
+                    </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- <div id="modalWrap">
+            <div id="modalBody">
+              <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
             </div>
+          </div> -->
+      </article>
 
-            <div id="modalWrap">
-              <div id="modalBody">
-                <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+      <article class="even">
+        <div class="inner">
+          <a href="./detail_25.html" target="_blank">
+            <img src="img/p25.jpg" alt="그릴세트 상세페이지" />
+            <div class="info">
+              <div class="bg"></div>
+              <div class="details">
+                  <b class="name">그릴세트 상세페이지</b>
+                  <div class="sub">
+                    <span class="role">#기획  #디자인</span>
+                  </div>
               </div>
             </div>
-          </article>
-
-          <article class="even">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
-          </article>
-
-          <article class="odd">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
-          </article>
-
-          <article class="even">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
-          </article>
-
-          <article class="odd">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
-          </article>
-
-          <article class="even">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
-          </article>
-
-          <article class="odd">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
-          </article>
-
-          <article class="even">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
-          </article>
-
-          <article class="odd">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
-          </article>
-
-          <article class="even">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
-          </article>
-
-          <article class="odd">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
-          </article>
-
-          <article class="even">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
-          </article>
-
-          <article class="odd">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
-          </article>
-
-          <article class="even">
-              <div class="inner">
-                <a href="#">
-                  <img src="img/p1.jpg" alt="1" />
-                  <div class="info">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <b class="name">Web - site</b>
-                        <div class="sub">
-                          <span class="role">반응형 갤러리 UI</span>
-                          <span class="date">2020.12</span>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div id="modalWrap">
-                <div id="modalBody">
-                  <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
-                </div>
-              </div>
-          </article>
-          
+          </a>
         </div>
+
+        <!-- <div id="modalWrap">
+          <div id="modalBody">
+            <p><img src="./img/dogpure_shampoo_detail.jpg" alt="도그퓨어 강아지 샴푸 상세페이지"></p>
+          </div>
+        </div> -->
+    </article>
+
+    <article class="odd">
+      <div class="inner">
+        <a href="./detail_26.html" target="_blank">
+          <img src="img/p26.jpg" alt="루아나 미용실 이벤트 배너1" />
+          <div class="info">
+            <div class="bg"></div>
+            <div class="details">
+                <b class="name">루아나 미용실 이벤트 배너1</b>
+                <div class="sub">
+                  <span class="role">#기획  #디자인</span>
+                </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- <div class="modalWrap">
+        <div class="modalBody">
+          <p><img src="./img/p26.jpg" alt="루아나 미용실 이벤트 배너1"></p>
+        </div>
+      </div>  -->
+    </article>
+
+    <article class="odd">
+      <div class="inner">
+        <a href="./detail_27.html" target="_blank">
+          <img src="img/p27.jpg" alt="루아나 미용실 이벤트 배너2" />
+          <div class="info">
+            <div class="bg"></div>
+            <div class="details">
+                <b class="name">루아나 미용실 이벤트 배너2</b>
+                <div class="sub">
+                  <span class="role">#기획  #디자인</span>
+                </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- <div class="modalWrap">
+        <div class="modalBody">
+          <p><img src="./img/p27.jpg" alt="루아나 미용실 이벤트 배너2"></p>
+        </div>
+      </div>  -->
+  </article>
+
+  <article class="odd">
+    <div class="inner">
+      <a href="./detail_28.html" target="_blank">
+        <img src="img/p28.jpg" alt="루아나 미용실 이벤트 배너3" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">루아나 미용실 이벤트 배너3</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
+
+  <article class="odd">
+    <div class="inner">
+      <a href="./detail_29.html" target="_blank">
+        <img src="img/p29.jpg" alt="루아나 미용실 이벤트 배너4" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">루아나 미용실 이벤트 배너4</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
+
+  <article class="even">
+    <div class="inner">
+      <a href="./detail_30.html" target="_blank">
+        <img src="img/p30.jpg" alt="요소수 상세페이지" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">요소수 상세페이지</b>
+              <div class="sub">
+                <span class="role">#기획  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
     </div>
 
-  </section>
+  </article>
 
+  <article class="even">
+    <div class="inner">
+      <a href="./detail_31.html" target="_blank">
+        <img src="img/p31.jpg" alt="와이책 상세페이지" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">와이책 상세페이지</b>
+              <div class="sub">
+                <span class="role">#기획  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
 
+  </article>
 
+  <article class="odd">
+    <div class="inner">
+      <a href="./detail_32.html" target="_blank">
+        <img src="img/p32.jpg" alt="속옷 이벤트 배너" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">속옷 이벤트 배너</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
 
+  <article class="even">
+    <div class="inner">
+      <a href="./detail_33.html" target="_blank">
+        <img src="img/p33.jpg" alt="속옷 상세페이지" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">속옷 상세페이지</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
 
+  <article class="even">
+    <div class="inner">
+      <a href="./detail_34.html" target="_blank">
+        <img src="img/p34.jpg" alt="좌식소파의자 상세페이지" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">좌식소파의자 상세페이지</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #촬영  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
 
+  <article class="even">
+    <div class="inner">
+      <a href="./detail_35.html" target="_blank">
+        <img src="img/p35.jpg" alt="캐리어 상세페이지" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">캐리어 상세페이지</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #촬영  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
 
+  <article class="even">
+    <div class="inner">
+      <a href="./detail_36.html" target="_blank">
+        <img src="img/p36.jpg" alt="기능성 장갑 상세페이지" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">기능성 장갑 상세페이지</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #촬영  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
+
+  <article class="even">
+    <div class="inner">
+      <a href="./detail_37.html" target="_blank">
+        <img src="img/p37.jpg" alt="헤드랜턴 상세페이지" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">헤드랜턴 상세페이지</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #촬영  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
+
+  <article class="even">
+    <div class="inner">
+      <a href="./detail_38.html" target="_blank">
+        <img src="img/p38.jpg" alt="두레박 상세페이지" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">두레박 상세페이지</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #촬영  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
+
+  <article class="even">
+    <div class="inner">
+      <a href="./detail_39.html" target="_blank">
+        <img src="img/p39.jpg" alt="우드 머그컵 상세페이지" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">우드 머그컵 상세페이지</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
+
+  <article class="odd">
+    <div class="inner">
+      <a href="./detail_40.html" target="_blank">
+        <img src="img/p40.jpg" alt="태국 비자 서비스 배너" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">태국 비자 서비스 배너</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
+
+  <article class="even">
+    <div class="inner">
+      <a href="./detail_41.html" target="_blank">
+        <img src="img/p41.jpg" alt="태클박스 상세페이지" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">태클박스 상세페이지</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #촬영  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
+
+  <article class="even">
+    <div class="inner">
+      <a href="./detail_42.html" target="_blank">
+        <img src="img/p42.jpg" alt="비누 상세페이지" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">비누 상세페이지</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
+
+  <article class="even">
+    <div class="inner">
+      <a href="./detail_42.html" target="_blank">
+        <img src="img/p42.jpg" alt="비누 상세페이지" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">비누 상세페이지</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+  </article>
+
+  <article class="even">
+    <div class="inner">
+      <a href="./detail_43.html" target="_blank">
+        <img src="img/p43.jpg" alt="플라이어 상세페이지" />
+        <div class="info">
+          <div class="bg"></div>
+          <div class="details">
+              <b class="name">플라이어 상세페이지</b>
+              <div class="sub">
+                <span class="role detail_wrap">#기획  #촬영  #디자인</span>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+        <!-- <div class="modalWrap">
+            <div class="modalBody">
+              <p><img src="./img/p28.jpg" alt="루아나 미용실 이벤트 배너3"></p>
+            </div>
+          </div>  -->
+    </article>
+          
+  </div>
+ </div>
+</section>
+
+<footer>
+  <p>Copyright 2024. JangOkSoon all rights reserved.</p>
+</footer>
+  <!--TO TOP BUTTON-->
+  <div id="to-top">
+    <div class="material-icons">arrow_upward</div>
+  </div>
 </body>
 </html>
